@@ -2,6 +2,7 @@
 %define ruby_rubylibdir %(ruby -r rbconfig -e 'print Config::CONFIG["rubylibdir"]')
 %define	ruby_archdir	%(ruby -r rbconfig -e 'print Config::CONFIG["archdir"]')
 Summary:	Ruby GUID Library
+Summary(pl):	Biblioteka Ruby GUID
 Name:		ruby-guid
 Version:	0.0.1
 Release:	1
@@ -19,11 +20,13 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Ruby implementation of the IEEE GUID spec.
 
+%description -l pl
+Implementacja specyfikacji IEEE GUID dla jêzyka Ruby.
+
 %prep
 %setup -q
 
 %build
-
 ruby install.rb config \
 	--rb-dir=%{ruby_rubylibdir} \
 	--so-dir=%{ruby_archdir}
