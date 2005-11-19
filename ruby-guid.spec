@@ -1,6 +1,3 @@
-%define	ruby_ridir	%(ruby -r rbconfig -e 'include Config; print File.join(CONFIG["datadir"], "ri", CONFIG["ruby_version"], "system")')
-%define ruby_rubylibdir %(ruby -r rbconfig -e 'print Config::CONFIG["rubylibdir"]')
-%define	ruby_archdir	%(ruby -r rbconfig -e 'print Config::CONFIG["archdir"]')
 Summary:	Ruby GUID Library
 Summary(pl):	Biblioteka Ruby GUID
 Name:		ruby-guid
@@ -11,6 +8,7 @@ Group:		Development/Languages
 Source0:	http://rubyforge.org/frs/download.php/378/%{name}-%{version}.tar.gz
 # Source0-md5:	10f50564c198db7ba0b592149f90cc52
 URL:		http://rubyforge.org/projects/uuid/
+BuildRequires:	rpmbuild(macros) >= 1.263
 BuildRequires:	ruby
 BuildRequires:	ruby-devel
 Requires:	ruby
