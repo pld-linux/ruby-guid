@@ -10,7 +10,7 @@ Source0:	http://rubyforge.org/frs/download.php/378/%{name}-%{version}.tar.gz
 URL:		http://rubyforge.org/projects/uuid/
 BuildRequires:	rpmbuild(macros) >= 1.277
 BuildRequires:	ruby-devel
-%ruby_mod_ver_requires_eq
+%{?ruby_mod_ver_requires_eq}
 #BuildArch: noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
