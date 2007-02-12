@@ -1,5 +1,5 @@
 Summary:	Ruby GUID Library
-Summary(pl.UTF-8):   Biblioteka Ruby GUID
+Summary(pl.UTF-8):	Biblioteka Ruby GUID
 Name:		ruby-guid
 Version:	0.0.1
 Release:	2
