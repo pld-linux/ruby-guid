@@ -1,5 +1,5 @@
 Summary:	Ruby GUID Library
-Summary(pl):	Biblioteka Ruby GUID
+Summary(pl.UTF-8):   Biblioteka Ruby GUID
 Name:		ruby-guid
 Version:	0.0.1
 Release:	2
@@ -17,8 +17,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Ruby implementation of the IEEE GUID spec.
 
-%description -l pl
-Implementacja specyfikacji IEEE GUID dla jêzyka Ruby.
+%description -l pl.UTF-8
+Implementacja specyfikacji IEEE GUID dla jÄ™zyka Ruby.
 
 %prep
 %setup -q
